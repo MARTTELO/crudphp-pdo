@@ -17,7 +17,7 @@ class User
 
     }
 
-    public function read($id)
+    public function read()
     {
         $sql = 'SELECT * FROM users';
         $stmt = $this->pdo->query($sql);
