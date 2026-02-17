@@ -1,5 +1,5 @@
 <?php
-    $host = 'localhjost';
+    $host = 'localhost';
     $dbname = 'crud_php_pdo';
     $username = 'root';
     $password = '';
