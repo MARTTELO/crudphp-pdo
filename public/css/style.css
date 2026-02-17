@@ -50,7 +50,7 @@ button{
 
 .modal-content{
     background-color: #fff;
-    display: block;
+    display: block !important;
     margin: 15px auto;
     padding: 20px;
     border: 1px solid #888;
@@ -62,7 +62,6 @@ button{
 }
 
 .close-modal{
-    display: inline-block;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;

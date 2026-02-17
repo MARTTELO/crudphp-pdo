@@ -94,7 +94,7 @@ $users = $userController->index();
         <label class="form-label">Email</label>
         <input type="email" class="form-control" id="editEmail" name="email" placeholder="E-mail" required>
         <br>
-
+        
         <button type="submit" class="btn btn-success" name="update">Atualizar</button>
       </form>
     </div>

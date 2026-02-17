@@ -30,4 +30,28 @@ document.addEventListener('DOMContentLoaded', function () {
       editModal.style.display = 'none'
     }
   })
+
+  //validacao básica de formulários de criação
+  const createForm = document.getElementById('createForm');
+  createForm.addEventListener('submit', function(event) {
+    const name = document.getElementById('createName').value.trim();
+    const email = document.getElementById('createEmail').value.trim();
+
+    if (!name || !email){
+      event.preventDefault();
+      alert("Por favor, preencha todos os campos antes de enviar.");
+    }else{
+        alert("Usuário adicionado com sucesso!");
+    }
+  });
+
+  // confirmar exclusão de usuário
+  const deleteButtons = document.querySelectorAll('.delete-btn');
+  deleteButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      if (!confirm("Tem certeza que deseja excluir este usuário?")) {
+        event.preventDefault();
+      }
+    });
+  });
 });
