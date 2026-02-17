@@ -1,6 +1,6 @@
 <?php
 
-    require_once __DIR__ . '../class/User.php/';
+    require_once __DIR__ . '../class/User.php';
 
      class UserController{
         private $user;
