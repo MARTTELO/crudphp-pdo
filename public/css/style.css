@@ -1,0 +1,12 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    height: 100vh;
+    
+}
+form{
+    margin-top: 50px;
+    width: 80%
+}
