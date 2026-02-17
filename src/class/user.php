@@ -21,7 +21,7 @@ class User
     {
         $sql = 'SELECT * FROM users';
         $stmt = $this->pdo->query($sql);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function update($id, $name, $email)
@@ -34,7 +34,7 @@ class User
 
     public function delete($id)
     {
-        $sql = 'DELETE users WHERE id = :id';
+        $sql = 'DELETE from users WHERE id = :id';
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['id' => $id]);
     }
